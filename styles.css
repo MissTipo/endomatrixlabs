@@ -1,0 +1,124 @@
+:root {
+  --plum: #3A1F2D;
+  --sage: #6B8F71;
+  --bone: #F7F4F1;
+  --charcoal: #2B2B2B;
+  --lavender-gray: #D8D2DA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--charcoal);
+  background: var(--bone);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.hero {
+  background: var(--plum);
+  color: var(--bone);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hero-sub {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.waitlist {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.waitlist input {
+  padding: 0.7rem;
+  border-radius: 4px;
+  border: none;
+  min-width: 240px;
+}
+
+.waitlist button {
+  padding: 0.7rem 1.2rem;
+  background: var(--sage);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+.section {
+  background: var(--bone);
+}
+
+.section.muted {
+  background: #EFEAE7;
+}
+
+h2 {
+  color: var(--plum);
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding-left: 1.2rem;
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+
+.features li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--sage);
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+footer {
+  background: var(--lavender-gray);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--plum);
+  text-decoration: none;
+}
+
